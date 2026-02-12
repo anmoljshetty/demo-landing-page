@@ -4,7 +4,7 @@ import hero2 from "./assets/cafe2.avif";
 export default function Hero() {
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-center flex flex-col items-center justify-center text-center px-6"
+      className="relative h-[100dvh] w-full bg-cover bg-center flex flex-col items-center justify-center text-center px-6 overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${hero2})`,
       }}
@@ -13,7 +13,7 @@ export default function Hero() {
          - pt-24 (mobile) and md:pt-32 (desktop) ensures the text 
            starts below the absolute/fixed Navbar height.
       */}
-      <div className="flex flex-col items-center pt-24 md:pt-32">
+      <div className="flex flex-col items-center pt-12 md:pt-20">
         <h1 className="font-mono font-bold text-6xl md:text-8xl lg:text-9xl text-orange-200/90 leading-none tracking-tighter mb-6 drop-shadow-2xl">
           NAMEEE
         </h1>
